@@ -116,6 +116,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 
 // contact form variables
+/*
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
@@ -133,7 +134,19 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
+*/
+document.addEventListener('DOMContentLoaded', () => {
+  const navigationLinks = document.querySelectorAll("[data-nav-link]");
 
+  navigationLinks.forEach(link => {
+    if (link.textContent.trim() === 'Contact') {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // stop any page-switching
+        window.open('https://www.linkedin.com/in/shivanishrotriya/', '_blank');
+      });
+    }
+  });
+});
 
 
 // page navigation variables
