@@ -1911,4 +1911,14 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ffcc00; /* optional hover color */
   text-decoration: underline; /* show underline on hover */
 }
+
+.testimonial-link {
+  color: #00ffff; /* cyan for black background */
+  text-decoration: none;
+}
+
+.testimonial-link:hover {
+  color: #ffcc00; /* optional hover color */
+  text-decoration: underline;
+}
 }
