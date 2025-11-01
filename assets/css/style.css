@@ -1921,4 +1921,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #ffcc00; /* optional hover color */
   text-decoration: underline;
 }
+
+.club-link,
+.club-link:visited,
+.club-link:hover,
+.club-link:active,
+.club-link:focus {
+  color: #00ffff !important;      /* cyan on all states */
+  text-decoration: none !important; 
+  -webkit-text-fill-color: #00ffff; /* ensures iOS Safari applies cyan */
+}
+
+/* Optional: change on hover */
+.club-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline !important;
+}
+
+/* Force cyan color for testimonial links (timeline/resume) */
+.testimonial-link,
+.testimonial-link:visited,
+.testimonial-link:hover,
+.testimonial-link:active,
+.testimonial-link:focus {
+  color: #00ffff !important; 
+  text-decoration: none !important; 
+  -webkit-text-fill-color: #00ffff;
+}
+
+.testimonial-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline !important;
+}
 }
