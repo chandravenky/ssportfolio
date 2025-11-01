@@ -1902,4 +1902,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+	.testimonial-link {
+  color: #00ffff; /* cyan for black background */
+  text-decoration: none; /* remove underline by default */
+}
+
+.testimonial-link:hover {
+  color: #ffcc00; /* optional hover color */
+  text-decoration: underline; /* show underline on hover */
+}
 }
