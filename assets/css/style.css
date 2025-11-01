@@ -1871,7 +1871,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+.club-link {
+  color: #00ffff; /* bright cyan for visibility on black */
+  text-decoration: none; /* no underline by default */
+}
 
+.club-link:hover {
+  color: #ffcc00; /* changes on hover */
+  text-decoration: underline; /* underline on hover */
+}
 
   /**
 	 * RESUME
