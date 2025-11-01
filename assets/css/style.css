@@ -1881,12 +1881,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: underline; /* underline on hover */
 }
 
-.service-club-box .club-link {
-  white-space: nowrap; /* keep club names together */
-  color: #00ffff;
-  text-decoration: none;
-}
 
+.service-club-box .club-link {
+  white-space: normal; /* let the text break naturally */
+}
+	
 .service-club-box .club-link:hover {
   color: #ffcc00;
   text-decoration: underline;
