@@ -26,7 +26,6 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
-const modalTime = document.querySelector("[data-modal-time]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -43,7 +42,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-    modalTime.innerText = this.dataset.modalTime;
 
     testimonialsModalFunc();
 
