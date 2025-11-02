@@ -429,6 +429,11 @@ main {
 
 .contact-info address { font-style: normal; }
 
+.contact-info .contact-link {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .social-list {
   display: flex;
   justify-content: flex-start;
