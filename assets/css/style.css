@@ -1988,3 +1988,17 @@ article.active {
 .filter-select-box {
   display: none !important;
 }
+
+/* Force cyan color on all links on iOS Safari */
+.club-link, .testimonial-link {
+  all: unset; /* removes default link styles */
+  color: #00ffff !important; 
+  text-decoration: none !important;
+  -webkit-text-fill-color: #00ffff !important;
+  cursor: pointer;
+}
+
+.club-link:hover, .testimonial-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline !important;
+}
