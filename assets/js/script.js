@@ -10,29 +10,18 @@ sidebarBtn.addEventListener("click", () => elementToggleFunc(sidebar));
 
 // ================== PORTFOLIO ==================
 const portfolioLink = document.getElementById("portfolio-link");
-const navLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+
+// Select the Portfolio navbar button
+const portfolioNavButton = Array.from(document.querySelectorAll("[data-nav-link]"))
+  .find(btn => btn.textContent.trim() === "Portfolio");
 
 portfolioLink.addEventListener("click", (e) => {
   e.preventDefault();
 
-  // Remove active class from all navbar buttons and pages
-  navLinks.forEach(link => link.classList.remove("active"));
-  pages.forEach(page => page.classList.remove("active"));
-
-  // Activate Portfolio navbar button
-  navLinks.forEach(link => {
-    if (link.textContent.trim() === "Portfolio") {
-      link.classList.add("active");
-    }
-  });
-
-  // Activate Portfolio page
-  pages.forEach(page => {
-    if (page.dataset.page === "portfolio") {
-      page.classList.add("active");
-    }
-  });
+  // Trigger the navbar button click
+  if (portfolioNavButton) {
+    portfolioNavButton.click();
+  }
 });
 
 
