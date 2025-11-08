@@ -765,14 +765,23 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: auto;      
+  height: 60px;      
+  object-fit: contain; /
+  display: block;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
 .clients-item img:hover { filter: grayscale(0); }
 
+@media (min-width: 768px) {
+  .clients-item img { height: 80px; }
+}
 
+@media (min-width: 1250px) {
+  .clients-item img { height: 100px; }
+}
 
 
 
