@@ -8,6 +8,34 @@ const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", () => elementToggleFunc(sidebar));
 
+// ================== PORTFOLIO ==================
+const portfolioLink = document.getElementById("portfolio-link");
+const navLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+portfolioLink.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  // Remove active class from all navbar buttons and pages
+  navLinks.forEach(link => link.classList.remove("active"));
+  pages.forEach(page => page.classList.remove("active"));
+
+  // Activate Portfolio navbar button
+  navLinks.forEach(link => {
+    if (link.textContent.trim() === "Portfolio") {
+      link.classList.add("active");
+    }
+  });
+
+  // Activate Portfolio page
+  pages.forEach(page => {
+    if (page.dataset.page === "portfolio") {
+      page.classList.add("active");
+    }
+  });
+});
+
+
 // ================== TESTIMONIALS MODAL ==================
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
