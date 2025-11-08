@@ -1979,8 +1979,5 @@ article.active {
 }
 
 .testimonials-avatar-box img {
-  width: 60px;
-  height: 60px;
   object-fit: cover; /* trims extra transparent space */
-  border-radius: 8px; /* optional */
 }
