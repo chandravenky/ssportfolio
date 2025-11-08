@@ -1947,12 +1947,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 .club-link:hover,
 .club-link:active,
 .club-link:focus {
-  color: #00ffff !important;      /* cyan on all states */
-  text-decoration: none !important; 
-  -webkit-text-fill-color: #00ffff; /* ensures iOS Safari applies cyan */
+	color: #00ffff !important;              /* cyan for all states */
+  text-decoration: none !important;       /* remove underline by default */
+  -webkit-text-fill-color: #00ffff !important; /* forces iOS Safari color */
+  -webkit-appearance: none !important;    /* disables default iOS link styles */
+  -webkit-tap-highlight-color: transparent; /* removes tap highlight on iOS */
 }
 
-/* Optional: change on hover */
+
 .club-link:hover {
   color: #ffcc00 !important;
   text-decoration: underline !important;
@@ -1964,9 +1966,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 .testimonial-link:hover,
 .testimonial-link:active,
 .testimonial-link:focus {
-  color: #00ffff !important; 
-  text-decoration: none !important; 
-  -webkit-text-fill-color: #00ffff;
+  color: #00ffff !important;              /* cyan for all states */
+  text-decoration: none !important;       /* remove underline by default */
+  -webkit-text-fill-color: #00ffff !important; /* forces iOS Safari color */
+  -webkit-appearance: none !important;    /* disables default iOS link styles */
+  -webkit-tap-highlight-color: transparent; /* removes tap highlight on iOS */
 }
 
 .testimonial-link:hover {
