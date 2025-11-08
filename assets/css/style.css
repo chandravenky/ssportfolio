@@ -573,6 +573,23 @@ main {
   scroll-snap-align: none; /* remove scroll snapping since we use grid */
 }
 
+/* Medium screens: 2 columns */
+@media (min-width: 768px) {
+  .testimonials-list {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+/* Large screens: 3 or more columns if you want */
+@media (min-width: 1024px) {
+  .testimonials-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 35px;
+  }
+}
+
 .testimonials-avatar-box {
   position: absolute;
   top: 0;
