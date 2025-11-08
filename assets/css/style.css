@@ -1963,19 +1963,3 @@ article.active {
     z-index: 2;
 }
 
-.testimonials-avatar-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border-radius: 50%; /* makes it round like your old icon */
-  background: white; /* or transparent if your image has a transparent background */
-}
-
-.testimonials-avatar-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* crops and centers it nicely */
-}
