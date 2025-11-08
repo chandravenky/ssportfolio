@@ -1963,13 +1963,6 @@ article.active {
     z-index: 2;
 }
 
-/* Align testimonials image beside the text */
-.content-card {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
 /* Ensure the image stays centered and properly sized */
 .testimonials-avatar-box {
   flex-shrink: 0;
