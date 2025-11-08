@@ -562,22 +562,18 @@ main {
 .testimonials-title { margin-bottom: 20px; }
 
 .testimonials-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px 15px;
-  padding-bottom: 35px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  display: grid;          /* stack items vertically */
+  grid-template-columns: 1fr;  /* single column */
+  gap: 20px;              /* spacing between items */
+  margin: 0;              /* remove negative margins from flex version */
+  padding: 0;             /* adjust padding as needed */
+  overflow: visible;      /* remove horizontal scroll */
+  scroll-snap-type: none; /* disable snap scrolling */
 }
 
 .testimonials-item {
-  min-width: 100%;
-  scroll-snap-align: center;
+  min-width: auto;        /* let items fill available width */
+  scroll-snap-align: none; /* disable snap */
 }
 
 .testimonials-avatar-box {
