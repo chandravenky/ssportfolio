@@ -1956,3 +1956,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-decoration: underline !important;
 }
 }
+
+article.active {
+    display: block !important;
+    animation: fade 0.5s ease forwards;
+    z-index: 2;
+}
