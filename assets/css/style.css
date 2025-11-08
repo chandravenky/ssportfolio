@@ -584,17 +584,6 @@ main {
   }
 }
 
-.content-card {
-  display: flex;
-  align-items: center; /* vertically aligns image and text */
-  gap: 15px; /* space between image and text */
-  position: relative;
-  padding: 30px; /* keep your current padding */
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  background: var(--bg-gradient-onyx);
-}
-
 .testimonials-avatar-box {
   position: absolute;
   top: 15px; /* adjust vertical position to match old icon */
