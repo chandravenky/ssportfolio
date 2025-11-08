@@ -1981,3 +1981,6 @@ article.active {
     z-index: 2;
 }
 
+.filter-select-box {
+  display: none !important;
+}
