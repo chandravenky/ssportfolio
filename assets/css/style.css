@@ -596,15 +596,17 @@ main {
 }
 
 .testimonials-avatar-box {
-  flex-shrink: 0; /* prevents image from shrinking */
+  position: absolute;
+  top: 15px; /* adjust vertical position to match old icon */
+  left: 15px; /* adjust horizontal position to match old icon */
   width: 80px;
   height: 80px;
+  background: var(--bg-gradient-onyx);
+  border-radius: 20px;
+  box-shadow: var(--shadow-1);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  box-shadow: var(--shadow-1);
-  background: var(--bg-gradient-onyx);
 }
 
 .testimonials-avatar-box img {
